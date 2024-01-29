@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(123, 123, 123);
+  color: white;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgprimary{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+.imgprimary img{
+  border-radius: 20px;
+  width:90%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #000;
+  color: white;
+}
+
+.nav_section a,
+.shopping_cart {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  
+}
+.nav_section{
+  padding: 0 15px;
+}
+
+.material-icons-outlined {
+  font-family: 'Material Icons Outlined';
+ 
+  margin-right: 7px; /* Ajuste o valor conforme necessário para dar espaço entre os ícones */
+}
+
+.cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 6px;
+  position: absolute;
+  top: 10px;
+  right: 1px;
+  font-size: 12px;
+}
+
+.cart-item {
+  border: 1px solid #626d00;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: rgb(23, 3, 43);
+  height: 300px; /* Defina a altura desejada para todas as divs dos produtos no carrinho */
+  overflow: hidden; /* Adicionado para garantir que o conteúdo não ultrapasse as dimensões da div */
+}
+
+.cart-item img {
+  max-width: 100%;
+  height: 70%; /* Defina a altura desejada para a imagem */
+  object-fit: cover; /* Adicionado para garantir que a imagem não seja distorcida */
+}
+
+.cart-item p {
+  margin: 10px 0;
+}
+
+.cart-item button {
+  background-color: #4CAF50;
+  color: white;
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cart-item button:hover {
+  background-color: #45a049;
+}
+
+
+.logo {
+  flex: 0 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 1rem;
+}
+
+.nav_section {
+  margin-left: auto; /* Adicionado para alinhar à direita */
+
+}
+
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.overlay a, .login-button {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus, .login-button:hover, .login-button:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  font-size: 36px;
+  color: wheat;
+}
+
+.overlay-content {
+  position: relative;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer {
+  border: 1px solid #000d57; 
+  bottom: 0;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  margin: auto;
+  
+}
+
+footer div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer ul  {
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  max-height: 50px;
+  padding: 20px;
+}
+
+footer li{
+  display: flex;
+  padding: 10px;
+}
