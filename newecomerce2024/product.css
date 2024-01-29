@@ -1,0 +1,108 @@
+#productSection {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    position: relative;
+}
+
+.product {
+    border: 1px solid #000d57;
+    padding: 10px;
+    
+    width: calc(20% - 15px);
+    margin: 10px;
+      border-radius: 10px;
+    background-color: rgb(23, 3, 43);
+    height: auto;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.product img {
+    align-items: center;
+    max-width: 70%;
+    height: 60%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.product button {
+    background-color: #4CAF50;
+    color: white;
+    width: auto;
+    height: auto;
+    max-height: 50px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 500px) {
+    #productSection {
+        flex-direction: column;
+        background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .product {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        align-items: center;
+    }
+
+    .product img {
+        justify-content: space-around;
+        max-width: 50%;
+        height: 70%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .product:hover img {
+        transform: scale(1.1);
+    }
+
+    .product p {
+        margin: 10px 0;
+    }
+
+    .product button {
+        background-color: #4CAF50;
+        color: white;
+        width: auto; /* Ajustado para melhorar a aparência em telas menores */
+        height: auto;
+        padding: 8px;
+        border: none;
+        
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .product button:hover {
+        background-color: #45a049;
+    }
+}
